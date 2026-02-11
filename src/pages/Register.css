@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  line-height: 1.6;
+
+  /* ADD THIS */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-container {
+  max-width: 450px; /* Enhanced width for attractive design */
+  margin: 80px auto; /* From styles.css */
+  background: rgba(255, 255, 255, 0.1); /* Translucent background */
+  backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /*Stronger shadow for depth */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 0.8s ease-out; /* Added animation for attractive design */
+}
+
+/* Page Title Styles */
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff; /* White color for attractive design */
+  font-size: 2.2em; /* Enhanced font size for attractive design */
+  font-weight: 700; /* Enhanced font weight for attractive design */
+  letter-spacing: -0.5px; /* Added letter-spacing for attractive design */
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 25px; /* Enhanced spacing for attractive design */
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff; /* White color for attractive design */
+  font-size: 1em; /* Enhanced font size for attractive design */
+  font-weight: 600; /* Enhanced font weight for attractive design */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px; /* Enhanced padding for attractive design */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border for inputs*/
+  background: rgba(255, 255, 255, 0.08); /* Slightly visible input background */
+  color: #ffffff; /* White text in inputs */
+  border-radius: 8px; /* Enhanced border-radius for attractive design */
+  box-sizing: border-box;
+  font-size: 1em; /* Enhanced font size for attractive design */
+  transition: all 0.3s ease-in-out; /* Enhanced transition for attractive design */
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #00bfff; /* Bright blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.25); /* Bright blue shadow on focus */
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  width: 100%;
+  padding: 14px 25px; /* Enhanced padding for attractive design */
+  background-color: #00bfff; /* Bright blue button*/
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em; /*Enhanced font size for attractive design */
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px; /* Enhanced margin-top for attractive design */
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease; /* Enhanced transitions for attractive design */
+}
+
+.btn-primary:hover {
+  background-color: #009acd; /* Slightly darker blue on hover */
+  transform: translateY(-2px); /* Enhanced transform for attractive design */
+}
+
+.btn-primary:active {
+  transform: translateY(0); /* Enhanced transform for attractive design */
+}
+
+.link-text {
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+.link-text a {
+  color: #00bfff; /* Bright blue for links */
+  text-decoration: none;
+  font-weight: 600; /*Enhanced font weight for attractive design */
+  transition: color 0.3s ease;
+}
+
+.link-text a:hover {
+  color: #009acd; /* Slightly darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+
+  .form-title {
+    font-size: 1.8em;
+  }
+
+  .btn-primary {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+}
