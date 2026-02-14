@@ -94,7 +94,7 @@ html, body, #root {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg,#6366f1,#a855f7);
+    background: linear-gradient(135deg,#0e12e9,#a47bca);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -178,7 +178,7 @@ html, body, #root {
 }
 
 
-.post-sections{
+.post-actions{
   position: absolute;
   top: 15px;
   right: 15px;
@@ -189,9 +189,10 @@ html, body, #root {
   z-index: 10;
 }
 
-.post-card:hover .post-sections{
+.post-card:hover .post-actions{
     opacity: 1;
 }
+
 
 .action-btn{
   width: 38px;

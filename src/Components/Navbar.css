@@ -36,7 +36,7 @@
 .logo-text{
     font-size: 1.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg,#6366f1,#a855f7);
+    background: linear-gradient(135deg,#282cef,#c085f7);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,7 +48,7 @@
 }
 .nav-item{
     text-decoration: none;
-    color: #4b5563;
+    color: #4e89dc;
     font-weight: 500;
     font-size: 0.95rem;
     display: flex;
