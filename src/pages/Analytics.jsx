@@ -28,14 +28,12 @@ const Analytics = () => {
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
-  // Fetch posts from backend
   const fetchPosts = async () => {
     try {
       const response = await fetch('http://localhost:3000/posts');
       const data = await response.json();
       setPosts(data);
 
-      // Prepare data for charts
       const authorsCount = {};
       data.forEach(post => {
         authorsCount[post.author] = (authorsCount[post.author] || 0) + 1;
@@ -64,7 +62,6 @@ const Analytics = () => {
         </header>
 
         <div className="charts-container">
-          {/* Bar Chart */}
           <div className="chart-card">
             <h3>Posts per Author</h3>
             <div className="chart-wrapper">
@@ -81,7 +78,6 @@ const Analytics = () => {
             </div>
           </div>
 
-          {/* Pie Chart */}
           <div className="chart-card">
             <h3>Distribution</h3>
             <div className="chart-wrapper">
@@ -110,7 +106,6 @@ const Analytics = () => {
           </div>
         </div>
 
-        {/* Posts Table */}
         <div className="posts-table-section">
           <h3>All Posts</h3>
           <div className="table-wrapper">
@@ -135,7 +130,6 @@ const Analytics = () => {
             </table>
           </div>
 
-          {/* Pagination */}
           <div className="pagination">
             <button className="page-btn">Previous</button>
             <button className="page-btn">1</button>

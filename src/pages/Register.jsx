@@ -81,7 +81,6 @@ function Register() {
 
       <form className="register-form" onSubmit={handleSubmit}>
 
-        {/* Full Name */}
         <div className="form-group">
           <label htmlFor="name" className="form-label">Full Name</label>
           <input
@@ -95,7 +94,6 @@ function Register() {
           {error.name && <span className="form-error">{error.name}</span>}
         </div>
 
-        {/* Email */}
         <div className="form-group">
           <label htmlFor="email" className="form-label">Email Address</label>
           <input
@@ -109,7 +107,6 @@ function Register() {
           {error.email && <span className="form-error">{error.email}</span>}
         </div>
 
-        {/* Phone */}
         <div className="form-group">
           <label htmlFor="phone" className="form-label">Phone Number</label>
           <input
@@ -123,7 +120,6 @@ function Register() {
           {error.phone && <span className="form-error">{error.phone}</span>}
         </div>
 
-        {/* Password */}
         <div className="form-group">
           <label htmlFor="password" className="form-label">Password</label>
 
@@ -150,7 +146,6 @@ function Register() {
           )}
         </div>
 
-        {/* Confirm Password */}
         <div className="form-group">
           <label htmlFor="conPassword" className="form-label">
             Confirm Password
